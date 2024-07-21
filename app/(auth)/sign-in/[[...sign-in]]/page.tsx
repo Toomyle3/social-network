@@ -1,5 +1,18 @@
 import { SignIn } from "@clerk/nextjs";
 
-export default function Page() {
-  return <SignIn />;
-}
+const Page = () => {
+  return (
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        marginTop: "100px",
+      }}
+    >
+      <SignIn />
+    </div>
+  );
+};
+
+export default Page;
